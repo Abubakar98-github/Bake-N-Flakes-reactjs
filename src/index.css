@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css (or your global CSS file) */
+/* Add responsive styling to adjust the layout and spacing */
+
+/* For screens smaller than sm (640px) */
+ @media (max-width: 639px) {
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      width: 100%; /* Full width on smaller screens */
+       margin-bottom: 2rem; /* Add more bottom margin on smaller screens */
+    }
+  }
+   
+  /* For screens greater than or equal to sm (640px) */
+  @media (min-width: 640px) {
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; /* Align cards to the left on larger screens */
+    }
+    .card {
+      width: 28rem; /* Adjust card width for larger screens */
+      margin-bottom: 1rem; /* Restore default bottom margin for larger screens */
+    }
+  }
+   
+  /* styles.css */
+ 
+ 
